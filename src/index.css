@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdfbeb;
+  --color-gold-100: #fbf5c4;
+  --color-gold-200: #f6e788;
+  --color-gold-300: #efd14c;
+  --color-gold-400: #e6b922;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b08b26;
+  --color-gold-700: #8c681f;
+  --color-gold-800: #71521d;
+  --color-gold-900: #61441c;
+  --color-gold-950: #38240c;
+
+  --font-sans: 'Cairo', 'Tajawal', 'system-ui', 'sans-serif';
+  --font-amiri: 'Amiri', 'serif';
+
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-pulse-subtle: pulseSubtle 3s ease-in-out infinite;
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulseSubtle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.92; transform: scale(1.02); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Islamic Grid/Geometric Background Pattern */
+.islamic-bg {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                    radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.dark .islamic-bg {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.025) 1px, transparent 1px),
+                    radial-gradient(rgba(212, 175, 55, 0.025) 1px, transparent 1px);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border-width: 1px;
+  border-color: rgba(226, 232, 240, 0.5);
+  box-shadow: 0 20px 25px -5px rgba(2, 44, 34, 0.05);
+}
+
+.dark .glass-card {
+  background-color: rgba(11, 22, 16, 0.7);
+  backdrop-filter: blur(20px);
+  border-width: 1px;
+  border-color: rgba(6, 78, 59, 0.3);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-track {
+  background-color: #070e0a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 95, 70, 0.2);
+  border-width: 4px;
+  border-color: transparent;
+  background-clip: padding-box;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(4, 120, 87, 0.4);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 185, 129, 0.15);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(52, 211, 153, 0.3);
+}
