@@ -16,8 +16,8 @@ export const downloadLinks: { windows: OSConfig; macos: OSConfig } = {
       "أحدث إصدار مستقر",
     ],
     version: "v1.0.0",
-    fileSize: "85.4 ميجابايت",
-    downloadUrl: "https://drive.google.com/file/d/18-ghHExg-Yhep9BMO2XitjKLYH0ELeiF/view?usp=drive_link",
+    fileSize: "82 ميجابايت",
+    downloadUrl: "https://github.com/Devmockdev/arshif-alijazat/raw/main/public/ArshifAlIjazat-Setup.exe",
     releaseDate: "2026-07-20",
   },
   macos: {
