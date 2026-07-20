@@ -14,10 +14,10 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column: Copy & Actions */}
           <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-right">
-            
+
             {/* Logo Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-900/5 dark:bg-emerald-500/10 border border-emerald-500/20 mb-6 animate-fade-in-up">
               <span className="w-2.5 h-2.5 rounded-full bg-gold-500 animate-pulse" />
@@ -51,7 +51,7 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
                   <div className="text-base font-bold">ويندوز Windows</div>
                 </div>
               </a>
-              
+
               <a
                 href="#download"
                 onClick={(e) => {
@@ -94,7 +94,7 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
           <div className="lg:col-span-6 relative w-full flex justify-center">
             {/* Outer Application Frame Container */}
             <div className="relative w-full max-w-lg aspect-[16/10] rounded-2xl overflow-hidden border border-slate-300/80 dark:border-emerald-800/40 bg-slate-900/90 dark:bg-[#070e0a]/90 shadow-2xl animate-pulse-subtle">
-              
+
               {/* Window Header */}
               <div className="h-10 bg-slate-800 dark:bg-emerald-950/60 border-b border-slate-700/50 dark:border-emerald-900/30 px-4 flex items-center justify-between">
                 {/* OS Circles */}
@@ -112,7 +112,7 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
 
               {/* Application Main Layout */}
               <div className="flex h-[calc(100%-40px)] select-none">
-                
+
                 {/* Dashboard Mock Content */}
                 <div className="flex-1 p-4 flex flex-col gap-4 overflow-hidden text-right">
                   {/* Search Bar Row */}
@@ -151,7 +151,7 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
                     </div>
                     <div className="flex-1 divide-y divide-slate-800/60 dark:divide-emerald-900/10 overflow-y-auto text-[9px] text-slate-400">
                       <div className="px-3 py-2 flex justify-between hover:bg-slate-800/30 dark:hover:bg-emerald-950/20">
-                        <span className="w-1/3 text-slate-200 font-semibold">أحمد بن محمد الفاسي</span>
+                        <span className="w-1/3 text-slate-200 font-semibold">أحمد بن محمد</span>
                         <span className="w-1/3 text-center text-gold-450">٣ إجازات</span>
                         <span className="w-1/3 text-left">المغرب</span>
                       </div>
@@ -193,7 +193,7 @@ export const Hero: React.FC<{ onDownloadMac: () => void }> = ({ onDownloadMac })
 
               </div>
             </div>
-            
+
             {/* Extra Badge Behind Dashboard Mockup for Premium UI Look */}
             <div className="absolute -bottom-4 -right-4 w-48 bg-gradient-to-l from-gold-500 to-amber-400 text-slate-950 px-4 py-3 rounded-2xl font-bold text-xs shadow-lg flex items-center gap-2 border border-gold-300">
               <span className="flex h-2.5 w-2.5 relative">

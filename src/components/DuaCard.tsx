@@ -4,10 +4,10 @@ export const DuaCard: React.FC = () => {
   return (
     <section className="py-20 bg-slate-50 dark:bg-[#040805] relative">
       <div className="max-w-4xl mx-auto px-4">
-        
+
         {/* Main Card Frame */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-900 to-emerald-950 dark:from-[#06180e] dark:to-[#021008] border-2 border-gold-500/30 p-8 sm:p-12 text-center shadow-2xl">
-          
+
           {/* Islamic Star Background Watermark via SVG */}
           <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center -z-0">
             <svg
@@ -30,11 +30,10 @@ export const DuaCard: React.FC = () => {
 
           {/* Card Content */}
           <div className="relative z-10 space-y-6">
-            
+
             {/* Title */}
             <div className="inline-block">
               <h3 className="text-xl font-bold font-amiri text-gold-400 tracking-wide border-b border-gold-500/30 pb-2">
-                دعاء مبارك
               </h3>
             </div>
 

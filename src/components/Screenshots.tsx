@@ -12,9 +12,6 @@ import {
   Trash2,
   Edit,
   Upload,
-  Copy,
-  Share2,
-  RefreshCw,
   Database,
   FileText,
   Eye,
@@ -111,55 +108,25 @@ export const Screenshots: React.FC = () => {
               </p>
             </div>
 
-            {/* Middle Section: Quote & Statistics */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-              
-              {/* Shafi'i Quote Card (Col span 7) */}
-              <div className="lg:col-span-7 bg-[#0b120d] border border-emerald-950/40 rounded-xl p-4 flex flex-col justify-between relative shadow">
-                <span className="absolute top-3 right-3 text-[9px] font-bold text-gold-400 bg-gold-500/10 px-2 py-0.5 rounded border border-gold-500/10 flex items-center gap-1">
-                  <BookOpen className="w-3 h-3" /> حكمة وعبرة
-                </span>
-                
-                <p className="text-xs font-amiri font-bold text-slate-200 leading-loose text-center my-6">
-                  « من أراد الدنيا فعليه بالعلم، ومن أراد الآخرة فعليه بالعلم، ومن أرادهما معاً فعليه بالعلم. »
-                </p>
-                
-                <div className="flex justify-between items-center border-t border-slate-800/40 pt-3">
-                  <span className="text-[9px] text-gold-500 font-bold">— الإمام الشافعي</span>
-                  <div className="flex gap-2">
-                    <button className="flex items-center gap-1 px-2 py-1 rounded bg-slate-850 hover:bg-slate-800 text-[8px] text-slate-300 border border-slate-700/35">
-                      <Copy className="w-2.5 h-2.5" /> نسخ
-                    </button>
-                    <button className="flex items-center gap-1 px-2 py-1 rounded bg-slate-850 hover:bg-slate-800 text-[8px] text-slate-300 border border-slate-700/35">
-                      <Share2 className="w-2.5 h-2.5" /> مشاركة
-                    </button>
-                    <button className="flex items-center gap-1 px-2 py-1 rounded bg-slate-850 hover:bg-slate-800 text-[8px] text-slate-300 border border-slate-700/35">
-                      <RefreshCw className="w-2.5 h-2.5" /> رسالة أخرى
-                    </button>
-                  </div>
+            {/* Middle Section: Statistics */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-[#0b120d] border border-emerald-950/40 p-4 rounded-xl shadow flex items-center justify-between">
+                <div>
+                  <div className="text-[9px] text-slate-455 mb-1">إجمالي المجازين</div>
+                  <div className="text-sm font-bold text-slate-100">١ طالباً وشيخاً مسجلاً</div>
+                </div>
+                <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-500">
+                  <Users className="w-5 h-5" />
                 </div>
               </div>
-
-              {/* Statistics Widgets (Col span 5) */}
-              <div className="lg:col-span-5 flex flex-col gap-3">
-                <div className="bg-[#0b120d] border border-emerald-950/40 p-4 rounded-xl shadow flex items-center justify-between">
-                  <div>
-                    <div className="text-[9px] text-slate-455 mb-1">إجمالي المجازين</div>
-                    <div className="text-sm font-bold text-slate-100">١ طالباً وشيخاً مسجلاً</div>
-                  </div>
-                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-500">
-                    <Users className="w-5 h-5" />
-                  </div>
+              
+              <div className="bg-[#0b120d] border border-emerald-950/40 p-4 rounded-xl shadow flex items-center justify-between">
+                <div>
+                  <div className="text-[9px] text-slate-455 mb-1">إجمالي الإجازات الممنوحة</div>
+                  <div className="text-sm font-bold text-slate-100">١ سنداً وإجازة علمية مسجلة</div>
                 </div>
-                
-                <div className="bg-[#0b120d] border border-emerald-950/40 p-4 rounded-xl shadow flex items-center justify-between">
-                  <div>
-                    <div className="text-[9px] text-slate-455 mb-1">إجمالي الإجازات الممنوحة</div>
-                    <div className="text-sm font-bold text-slate-100">١ سنداً وإجازة علمية مسجلة</div>
-                  </div>
-                  <div className="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500">
-                    <FileText className="w-5 h-5" />
-                  </div>
+                <div className="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500">
+                  <FileText className="w-5 h-5" />
                 </div>
               </div>
             </div>

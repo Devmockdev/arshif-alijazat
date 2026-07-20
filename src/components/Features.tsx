@@ -7,7 +7,6 @@ import {
   FileSpreadsheet,
   Database,
   BarChart3,
-  BookOpen,
 } from "lucide-react";
 
 interface FeatureItem {
@@ -36,16 +35,6 @@ export const Features: React.FC = () => {
         "حفظ وأرشفة ملفات الإجازة الرسمية بصيغة PDF",
         "توثيق تاريخ الإصدار بدقة لكل إجازة",
         "تصفية وفرز السند حسب الأحدث أو الأقدم",
-      ],
-    },
-    {
-      title: "ميزة حكمة وعبرة",
-      icon: <BookOpen className="w-6 h-6 text-emerald-600 dark:text-gold-450" />,
-      bullets: [
-        "مكتبة مدمجة لأقوال السلف والعلماء في فضل العلم",
-        "إمكانية نسخ الحكمة ومشاركتها بضغطة زر",
-        "تحديث وعرض عشوائي للرسائل والحكم الملهمة",
-        "تصميم جمالي هادئ يتناسب مع الطابع الإسلامي",
       ],
     },
     {
